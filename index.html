@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Akash Gaurav - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -13,47 +14,38 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <h1>Akash Gaurav</h1>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#objective">Objective</a></li>
-                <li><a href="#education">Education</a></li>
+            <h1 class="logo">Akash Gaurav</h1>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div id="nav-toggle" class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
 
-    <!-- About Me Section -->
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Hello, I'm Akash Gaurav</h2>
+            <p>Mechanical Design Engineer | CAD Expert | Automation Enthusiast</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <img src="image3.jpg" alt="Akash Gaurav" class="profile-img">
-            <p>Hello! I'm Akash Gaurav, a passionate Mechanical Design Engineer with expertise in CAD software and mechanical systems optimization. I have a strong interest in automation and manufacturing technologies. I love to create and innovate efficient mechanical solutions.</p>
-        </div>
-    </section>
-
-    <!-- Objective Section -->
-    <section id="objective" class="section">
-        <div class="container">
-            <h2>Objective</h2>
-            <p>Dedicated Mechanical Design Engineer with hands-on experience in CAD software (AutoCAD, SolidWorks), mechanical analysis, and manufacturing processes. Proven ability to design and optimize mechanical systems, with a focus on automation and efficiency.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>M.Tech in Manufacturing Technology & Automation, Centre For Advanced Studies, AKTU, Lucknow (2022 - Present)</li>
-                <li>B.Tech in Mechanical Engineering, RKGIT, AKTU, Lucknow (2017 - 2021)</li>
-                <li>Intermediate, Methodist High School, Kanpur (2017)</li>
-                <li>Matriculation, Dr Virendra Swaroop Public School, Kanpur (2014)</li>
-            </ul>
+            <img src="image3.jpeg" alt="Akash Gaurav" class="profile-img">
+            <p>I'm a passionate Mechanical Design Engineer specializing in CAD and mechanical systems optimization. My goal is to innovate and streamline processes in automation and manufacturing technology.</p>
         </div>
     </section>
 
@@ -61,10 +53,12 @@
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Software:</strong> AutoCAD, SolidWorks, MATLAB, Minitab, MS Office Suite, Google Workspace</li>
-                <li><strong>Programming Languages:</strong> C, C++, Python</li>
-                <li><strong>Technical Skills:</strong> 3D Printing, EDM, FEA Analysis, PLC Programming</li>
+            <ul class="skills-list">
+                <li>AutoCAD</li>
+                <li>SolidWorks</li>
+                <li>MATLAB</li>
+                <li>3D Printing</li>
+                <li>PLC Programming</li>
             </ul>
         </div>
     </section>
@@ -74,14 +68,14 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <h3>3D Lattice Structures for Robotic Vacuum Grippers</h3>
-                <img src="image1.jpg" alt="3D Lattice Structure">
-                <p>Designed and evaluated 3D lattice structures for vacuum grippers in 6-axis robots using 3D printing techniques with carbon fiber-reinforced PLA composites.</p>
+                <h3>3D Lattice Structures for Robotic Grippers</h3>
+                <img src="image1.jpg" alt="Lattice Project">
+                <p>3D printed lattice structures using carbon fiber-reinforced PLA for vacuum grippers in 6-axis robots.</p>
             </div>
             <div class="project">
                 <h3>EDM Machining Using EDM Oil & DI Water</h3>
                 <img src="image2.jpg" alt="EDM Machining">
-                <p>Conducted a comparative analysis of EDM machine performance using gun metal workpieces and different dielectrics, optimizing machining parameters using statistical models.</p>
+                <p>Performance analysis of EDM machining processes, optimizing the use of different dielectrics.</p>
             </div>
         </div>
     </section>
@@ -90,8 +84,8 @@
     <section id="testimonials" class="section">
         <div class="container">
             <h2>Testimonials</h2>
-            <p>"Akash is a brilliant Mechanical Design Engineer. His expertise in CAD and 3D modeling truly impressed me. Highly recommended!" - John Doe, Senior Engineer</p>
-            <p>"Akash's attention to detail and passion for automation sets him apart. He's a valuable asset to any team." - Jane Smith, Project Manager</p>
+            <p>"Akash's expertise in CAD and 3D modeling truly impressed me. Highly recommended!" - John Doe, Senior Engineer</p>
+            <p>"He is detail-oriented and passionate about automation." - Jane Smith, Project Manager</p>
         </div>
     </section>
 
@@ -100,21 +94,20 @@
         <div class="container">
             <h2>Achievements</h2>
             <ul>
-                <li>3rd Position in National Technical Paper Presentation (2021)</li>
-                <li>85% score in National Level Quiz on Thermal Engineering (2020)</li>
-                <li>Workshops on AI, 3D Printing, Drone Technology, and Power BI</li>
+                <li>3rd Place in National Technical Paper Presentation (2021)</li>
+                <li>85% in National Quiz on Thermal Engineering (2020)</li>
             </ul>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="contact">
+    <!-- Contact Section -->
+    <footer id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:agaurav692@gmail.com">agaurav692@gmail.com</a></p>
             <p>Phone: +91-8726768243</p>
             <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-            <p>&copy; 2024 Akash Gaurav | Designed with HTML, CSS & JavaScript</p>
+            <p>&copy; 2024 Akash Gaurav</p>
         </div>
     </footer>
 
