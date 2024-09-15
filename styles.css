@@ -1,9 +1,10 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     color: #333;
 }
 
@@ -30,62 +31,78 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Section */
-header {
+/* Navbar */
+.navbar {
     background-color: #333;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
     color: white;
-    padding: 30px 0;
-    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
 }
 
-header h1 {
-    font-size: 2.5em;
+.navbar ul {
+    display: flex;
+    gap: 20px;
 }
 
-header .contact-info {
-    margin-top: 10px;
+.navbar ul li a {
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
 }
 
-header .contact-info p {
-    margin: 5px 0;
+.navbar ul li a:hover {
+    background-color: #555;
 }
 
-/* Objective Section */
-#objective {
-    background-color: #fff;
-    padding: 40px 0;
+/* Section Spacing */
+.section {
+    padding: 100px 0;
+    margin-top: 80px; /* Offset for fixed navbar */
 }
 
-#objective p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* Education Section */
-#education ul li {
-    margin: 10px 0;
-}
-
-/* Skills Section */
-#skills ul li {
-    margin: 10px 0;
-}
-
-/* Projects Section */
-#projects .project {
-    margin-bottom: 40px;
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 #projects .project img {
-    width: 100%;
+    width: 60%;
     height: auto;
-    margin-top: 10px;
+    display: block;
+    margin: 20px auto;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+}
+
+footer a {
+    color: #1a73e8;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
